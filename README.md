@@ -56,17 +56,14 @@ npm start
 The API will be available at `http://localhost:3000`
 
 API endpoints:
-+--------+-------------------+---------------+-------------------------------+
-| Method | Endpoint          | Auth Required | Purpose                       |
-+--------+-------------------+---------------+-------------------------------+
-| POST   | /api/auth/register|       ❌       | Register new user             |
-| POST   | /api/auth/login   |       ❌       | Login user                    |
-| GET    | /api/auth/profile |       ✅       | Get user profile              |
-| POST   | /api/notes        |       ✅       | Create note                   |
-| GET    | /api/notes        |       ✅       | Get all notes (paginated/searchable) |
-| GET    | /api/notes/:id    |       ✅       | Get single note               |
-| PUT    | /api/notes/:id    |       ✅       | Update note                   |
-| DELETE | /api/notes/:id    |       ✅       | Delete note                   |
-| GET    | /api/health       |       ❌       | Health check                  |
-+--------+-------------------+---------------+-------------------------------+
+
+POST   | /api/auth/register|       AuthRequired(❌)       | Register new user
+POST   | /api/auth/login   |       AuthRequired(❌)       | Login user
+GET    | /api/auth/profile |       AuthRequired(✅)       | Get user profile
+POST   | /api/notes        |       AuthRequired(✅)       | Create note  
+GET    | /api/notes        |       AuthRequired(✅)       | Get all notes (paginated/searchable)
+GET    | /api/notes/:id    |       AuthRequired(✅)       | Get single note
+PUT    | /api/notes/:id    |       AuthRequired(✅)       | Update note
+DELETE | /api/notes/:id    |       AuthRequired(✅)       | Delete note
+GET    | /api/health       |       AuthRequired(❌)       | Health check
 
