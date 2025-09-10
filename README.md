@@ -57,15 +57,7 @@ The API will be available at `http://localhost:3000`
 
 API endpoints:
 
-POST,/api/auth/register,AuthRequired(❌),Register new user
-POST,/api/auth/login,AuthRequired(❌),Login user
-GET,/api/auth/profile,AuthRequired(✅),Get user profile
-POST,/api/notes,AuthRequired(✅),Create note
-GET,/api/notes,AuthRequired(✅),Get all notes (paginated/searchable)
-GET,/api/notes/:id,AuthRequired(✅),Get single note
-PUT,/api/notes/:id,AuthRequired(✅),Update note
-DELETE,/api/notes/:id,AuthRequired(✅),Delete note
-GET,/api/health,AuthRequired(❌),Health check
+<pre> ```csv POST,/api/auth/register,AuthRequired(❌),Register new user POST,/api/auth/login,AuthRequired(❌),Login user GET,/api/auth/profile,AuthRequired(✅),Get user profile POST,/api/notes,AuthRequired(✅),Create note GET,/api/notes,AuthRequired(✅),Get all notes (paginated/searchable) GET,/api/notes/:id,AuthRequired(✅),Get single note PUT,/api/notes/:id,AuthRequired(✅),Update note DELETE,/api/notes/:id,AuthRequired(✅),Delete note GET,/api/health,AuthRequired(❌),Health check ``` </pre>
 
 
 
